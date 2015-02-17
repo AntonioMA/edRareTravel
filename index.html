@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/utils.js"></script>
+<script src="js/ed_route.js"></script>
+</head>
+<body onload="RouteGenerator.setup()";>
+<p>
+<div id="form_header">
+  <form id="params" onsubmit="return false;">
+    <table>
+      <tr>
+        <td>Start system: </td><td><input type="text" id="startSystem" value="Esuseku"></td>
+        <td>End system: </td><td><input type="text" id="endSystem" value="BD-02 4304"></td>
+      </tr>
+      <tr>
+        <td>Max. Distance to the station: </td><td> <input type="text" id="maxStationDistance" value="2000"></td>
+        <td>Hold size:  </td><td><input type="text" id="holdSize" value="80"></td>
+      </tr>
+      <tr>
+        <td>Items by stop (mean): </td><td><input type="text" id="itemsByStop" value="8"></td>
+      </tr>
+      <tr>
+        <td align="center" colspan=4> <input type="button" value="Generate route!" onclick="RouteGenerator.generateRoute();"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</p>
+<div id="result">
+</div>
+
+</body>
+</html>
